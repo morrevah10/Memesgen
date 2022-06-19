@@ -1,0 +1,91 @@
+.txt-editor{
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(6, 50px);
+    /* grid-template-areas: 
+    "btn-delet . btn-add . btn-swich "
+    "txt txt txt txt txt txt"
+    "txt-size txt-size txt-size txt-size txt-size txt-size"
+    "txt-color txt-color  fonts fonts "
+    "line-x line-x line-x line-y line-y line-y"
+    "outline outline width width strokeStyle strokeStyle"; */
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .btn-delet{
+    /* grid-area:btn-delet; */
+     grid-row-start: 1; 
+    grid-column: 1 /span 2; 
+    
+  }
+
+  .btn-add{
+    /* grid-area:btn-add; */
+    grid-row-start: 1;
+    grid-column: 3 /span 2;
+  }
+
+  .btn-swich{
+    /* grid-area:btn-swich; */
+    grid-row-start: 1;
+    grid-column: 5 /span 2;
+  }
+
+
+
+  .txt{
+    /* grid-area:txt; */
+    grid-row-start: 2;
+    grid-column: 1/span 6;
+  }
+
+  .txt-size{
+    /* grid-area:txt-size; */
+    grid-row-start: 3;
+    grid-column: 1/span 6;
+  }
+
+
+  .txt-color{
+    /* grid-area:txt-color; */
+    grid-row-start: 4;
+    grid-column: 1/span 2;
+  }
+  .fonts{
+    /* grid-area:fonts; */
+    grid-row-start: 4;
+    grid-column: 4/span 3;
+  }
+
+
+  .line-x{
+    /* grid-area:line-x; */
+    grid-row-start: 5;
+    grid-column: 1/span 3;
+
+  }
+.line-y{
+    /* grid-area: line-y; */
+    grid-row-start: 5;
+    grid-column: 4/span 3;
+}
+
+
+  .outline{
+    /* grid-area:outline; */
+    grid-row-start: 6;
+    grid-column: 1/span 2;
+  }
+  .width{
+    /* grid-area:width; */
+    grid-row-start: 6;
+    grid-column: 4;
+  }
+  .strokeStyle{
+    /* grid-area:strokeStyle; */
+    grid-row-start: 6;
+    grid-column: 6;
+  }

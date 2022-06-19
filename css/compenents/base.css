@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat-Regular;
+  color: black;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 15px;
+  margin: 10px, auto;
+  object-fit: contain;
+}
+
+.main-continer {
+  background-color: var(--clr4);
+}
+
+.footer {
+  height: 100px;
+  background-color: var(--clr1);
+  font-family: Montserrat-Thin;
+  font-size: 30px;
+  color: var(--clr4);
+  flex-direction: column;
+}
+
+p{
+    margin: 0px;
+}
+
+main {
+  background-color: var(--clr2);
+}
+
+
+h2{
+  font-family: Montserrat-Thin;
+}
+
+.noMemesMsg ,.btn-clear{
+  display: flex;
+    justify-content: center;
+}
+
+.clear{
+  height: 30px;
+  width: 50px;
+}

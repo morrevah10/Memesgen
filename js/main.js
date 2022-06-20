@@ -17,8 +17,8 @@ function createGmeme(imgId) {
 }
 
 function initMemeEditor(imgId) {
-  showEditor()
   gMeme = createGmeme(imgId)
+  showEditor()
   initCanvas()
   renderTxtsEditor()
 }
@@ -62,11 +62,16 @@ function drawCanvas() {
 }
 
 function getImgSrc() {
-  var imgIdx = gImgs.findIndex(function (img) {
-    return gMeme.selectedImgId === img.id
-  })
-
-  return gImgs[imgIdx].url
+  // if(gRandom){
+  //   console.log(gRandom)
+  //   console.log(gImgs)
+  // }
+    var imgIdx = gImgs.findIndex(function (img) {
+      return gMeme.selectedImgId === img.id
+    })
+  
+    return gImgs[imgIdx].url
+  
 }
 
 function showGallery() {

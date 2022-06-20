@@ -9,14 +9,12 @@
   </head>
 
   <body onload="init()">
-    <header class="main-header flex align-center space-between">
+    <header class="main-header  align-center ">
       <img src="img/logo/logo.png" class="logo" />
 
       <ul class="main-nav flex clean-list">
         <li><a href="#" onclick="showGallery()">gallery</a></li>
-        <li>|</li>
         <li><a href="#about">about</a></li>
-        <li>|</li>
         <li><a href="#" onclick="showMemes()">your memes</a></li>
       </ul>
     </header>
@@ -24,7 +22,7 @@
     <main class="main-continer">
       <section class="search-bar justify-items align-content">
         <input class="search" type="text" id="input" placeholder="Enter search keyword" onchange="filter()">
-        <button class="random-btn" onclick="">im flexible</button>
+        <button class="random-btn" onclick="creatRandMeme()">im flexible</button>
         <div class="top-search justify-items align-items">
           <div class="all" onclick="filterByTop(this)">all</div>
           <div class="search0" id="search0" onclick="filterByTop(this)"></div>
@@ -43,7 +41,7 @@
         
 
         <section class="meme hidden ">
-          <div class="meme-container flex align-center space-between ">
+          <div class="meme-container flex align-center space-evenly ">
               <canvas class="meme-canvas">
                 <h2>Your browser does not support the HTML5 canvas tag.</h2>
               </canvas>
@@ -86,12 +84,12 @@
 
 
     <script src="js/main.js"></script>
-    <script src="js/img.service.js"></script>
+    <script src="js/services/img.service.js"></script>
     <script src="js/render-editor.js"></script>
-    <script src="js/storage.service.js"></script>
-    <script src="js/upload.service.js"></script>
-    <script src="js/random.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/flexible.service.js"></script>
+    <script src="js/services/upload.service.js"></script>
+    <script src="js/services/modal.service.js"></script>
 
   </body>
 </html>

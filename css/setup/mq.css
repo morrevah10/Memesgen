@@ -40,7 +40,13 @@
 
 @media (max-width: 550px) {
 canvas{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
 }
+}
+
+@media (max-width:485px){
+    .gallery{
+        height: 1100px;
+    }
 }

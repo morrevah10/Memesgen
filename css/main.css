@@ -1,13 +1,13 @@
-@import 'css/setup/font.css';
-@import 'css/setup/vars.css';
-@import 'css/setup/helpers.css';
+@import '../css/setup/font.css';
+@import '../css/setup/vars.css';
+@import '../css/setup/helpers.css';
 
-@import 'css/compenents/base.css';
-@import 'css/compenents/editor.css';
-@import 'css/compenents/header.css';
-@import 'css/compenents/img-gallery.css';
-@import 'css/compenents/search.css';
-@import 'css/compenents/modal.css';
+@import '../css/compenents/base.css';
+@import '../css/compenents/editor.css';
+@import '../css/compenents/header.css';
+@import '../css/compenents/img-gallery.css';
+@import '../css/compenents/search.css';
+@import '../css/compenents/modal.css';
 
 
-@import 'css/setup/mq.css';
+@import '../css/setup/mq.css';
